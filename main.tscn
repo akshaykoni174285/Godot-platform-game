@@ -12,11 +12,12 @@ offset_bottom = 226.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 323.0
-offset_top = 326.0
-offset_right = 692.0
-offset_bottom = 504.0
-text = "Quit"
+offset_left = 338.0
+offset_top = 309.0
+offset_right = 701.0
+offset_bottom = 511.0
+text = "Quit
+"
 script = ExtResource("1_64wnt")
 
 [connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
