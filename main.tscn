@@ -1,18 +1,24 @@
-[gd_scene format=3 uid="uid://b5c4dalhyt682"]
+[gd_scene load_steps=2 format=3 uid="uid://qhw1dmb3qjvy"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_64wnt"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Play" type="Button" parent="."]
-offset_left = 393.0
-offset_top = 62.0
-offset_right = 667.0
-offset_bottom = 212.0
-text = "Play "
+offset_left = 323.0
+offset_top = 48.0
+offset_right = 692.0
+offset_bottom = 226.0
+text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 402.0
-offset_top = 384.0
-offset_right = 689.0
-offset_bottom = 522.0
-text = "Quit
-"
+offset_left = 323.0
+offset_top = 326.0
+offset_right = 692.0
+offset_bottom = 504.0
+text = "Quit"
+script = ExtResource("1_64wnt")
+
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
+[connection signal="pressed" from="Play" to="Quit" method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]
